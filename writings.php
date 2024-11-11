@@ -33,9 +33,20 @@ ls -l /var/www/html/writings
 
             // Scan the directory for PDF files
             $files = scandir($writings_dir);
-						echo '<pre>';
-						print_r($files);  // Debugging output to list directory contents
-						echo '</pre>';
+
+
+echo "<p>Using path: $writings_dir</p>";
+
+$files = scandir($writings_dir);
+if ($files === false) {
+    echo "<p>Failed to open directory: $writings_dir</p>";
+} else {
+    echo '<pre>';
+    echo "Contents of writings directory:\n";
+    print_r($files);
+    echo '</pre>';
+}
+
 
             foreach ($files as $file) {
                 if ($file !== '.' && $file !== '..' && pathinfo($file, PATHINFO_EXTENSION) === 'pdf') {
