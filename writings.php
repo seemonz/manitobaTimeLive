@@ -1,3 +1,4 @@
+ls -l /var/www/html/writings
 <!doctype html>
 <html>
 
@@ -32,6 +33,9 @@
 
             // Scan the directory for PDF files
             $files = scandir($writings_dir);
+						echo '<pre>';
+						print_r($files);  // Debugging output to list directory contents
+						echo '</pre>';
 
             foreach ($files as $file) {
                 if ($file !== '.' && $file !== '..' && pathinfo($file, PATHINFO_EXTENSION) === 'pdf') {
