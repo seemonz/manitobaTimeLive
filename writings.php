@@ -11,6 +11,7 @@
     <div id="sidebar">
         <h3 id="sidebar-title"><a href="/">manitobaTime</a></h3>
         <a href="/simonPelletier.html" id="sidebar-button">simonPelletier</a><br>
+				<a href="/maddie.html" id="sidebar-button">maddieMW</a><br>
         <a href="/writings.php" id="sidebar-button">Writings</a><br>
         <a href="/art" id="sidebar-button">Art</a><br>
     </div>
