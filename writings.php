@@ -1,4 +1,3 @@
-ls -l /var/www/html/writings
 <!doctype html>
 <html>
 
@@ -9,12 +8,24 @@ ls -l /var/www/html/writings
 </head>
 
 <body>
+		<!-- sidebar for laptop-->
     <div id="sidebar">
-        <h3 id="sidebar-title"><a href="/">manitobaTime</a></h3>
-        <a href="/simonPelletier.html" id="sidebar-button">simonPelletier</a><br>
+      <a href="/"><h3 id="sidebar-title">manitobaTime</h3></a>
+      <a href="/simonPelletier.html" id="sidebar-button">simonPelletier</a><br>
+      <a href="/maddie.html" id="sidebar-button">maddieMW</a><br>
+      <a href="/writings.php" id="sidebar-button">Writings</a><br>
+      <a href="/art" id="sidebar-button">Art</a><br>
+    </div>
+
+    <!-- sidebar for phone -->
+    <div id="phoneBar">
+      <div id="barLinks">
+        <h1 id="sidebar-title"><a href="/">manitobaTime</a></h1>
+        <a href="/simonPelletier.html" id="sidebar-button">simonPelletier</a>
         <a href="/maddie.html" id="sidebar-button">maddieMW</a><br>
-        <a href="/writings.php" id="sidebar-button">Writings</a><br>
-        <a href="/art" id="sidebar-button">Art</a><br>
+        <a href="/writings.php" id="sidebar-button">Writings</a>
+        <a href="/art" id="sidebar-button">Art</a>
+      </div>
     </div>
 
     <div id="content">
