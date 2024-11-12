@@ -12,13 +12,29 @@ img {
   border-radius: 5px;
 }
 
+/* Sidebar button styling (original style) */
+#sidebar a,
+#sidebar-button {
+    color: black;
+    text-decoration: none;
+		font-weight: normal; /* Ensure sidebar links are not bold */
+}
+
+#sidebar a:hover,
+#sidebar-button:hover {
+    color: grey;
+}
+
+/* New main content link styling */
 a {
-  color: black;
-  text-decoration: none;
+    color: #333333; /* Dark gray */
+    text-decoration: none; /* Remove underline for a clean look */
+    font-weight: bold; /* Make text bolder */
 }
 
 a:hover {
-  color: grey;
+    color: #555555; /* Slightly lighter gray on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 h1, h2, strong {
