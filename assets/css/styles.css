@@ -206,3 +206,22 @@ body {
   max-width: 100%;
 }
 
+/* for Art page*/
+.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 20px;
+		padding: 20px;
+}
+
+.gallery img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+		transform: scale(1.05);
+}
