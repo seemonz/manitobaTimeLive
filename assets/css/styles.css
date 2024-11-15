@@ -206,6 +206,18 @@ body {
   max-width: 100%;
 }
 
+.grid-item-full {
+  width: 100%;       /* Make it span the entire width */
+  float: none;       /* Reset float to ensure it spans across */
+  margin-bottom: 20px; /* Optional: Add space below the image */
+}
+
+.grid-item-full img {
+  width: 100%;       /* Ensure the image stretches across the container */
+  height: auto;      /* Maintain the aspect ratio */
+}
+
+
 /* for Art page*/
 .gallery {
 		display: grid;
